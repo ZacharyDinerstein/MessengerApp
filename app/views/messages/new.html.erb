@@ -1,0 +1,15 @@
+<div class="row">
+	<div class="col-xs-0 col-sm-3 col-md-4"></div>
+	<div class="col-12 col-sm-6 col-md-4">
+
+		<%= form_for(@message) do |f| %>	
+		<div class="field form"> 
+			<h2>Enter message</h2> 
+			<%= f.text_area :content, class: 'form-control z-depth-1 form__text-area shadow-textarea', placeholder: 'Write here...', rows: '4' %> 
+		</div> 
+		<div class="actions"> 
+			<%= f.submit "Create", class: 'btn btn-primary btn-lg button--link' %> 
+		</div> 
+		<% end %> 
+	</div>
+</div>
